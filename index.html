@@ -1,0 +1,179 @@
+<html>
+<head>
+  <title>07MBIG Seminario de visualización de datos</title>
+</head>
+<body>
+
+<h1>Seminario Visualización de Datos</h1>
+<b>Nombre:</b> Gregorio González Monja <br>
+Url: <a href="https://js-ke2h7m.stackblitz.io/">https://js-ke2h7m.stackblitz.io/</a><br>
+Url: Google Sheet <a href="https://docs.google.com/spreadsheets/d/1VEvOhDStp7adSVi___q5rL0AzOQ08L9tj6KAlGYNq0k/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1VEvOhDStp7adSVi___q5rL0AzOQ08L9tj6KAlGYNq0k/edit?usp=sharing</a><br>
+
+<p>
+El objetivo es responder a la pregunta <br>
+¿Merece la pena estudiar en España en los últimos años ?<br>
+Queremos verificar la hipótesis de que a mayor nivel de estudios , menor tasa de paro encontramos.
+</p>
+<p>
+Para ello vamos a ver la relación que existe entre el nivel de estudios alcanzado y la tasa de paro correspondiente al mismo.<br>
+La audiencia es el público general, tanto personas jóvenes que no tienen claro si les merece la pena continuar con estudios o dejarlos para trabajar, o personas adultas a las que les ayude a valorar si les merece la pena conseguir un nivel de estudios superior al que ya disponen.<br>
+El mensaje es el documento en sí donde aparecen las representaciones gráficas de los datos estudiados, así como las explicaciones de lo que se observa en dichos gráficos.
+</p>
+
+<p>
+  <b>Fuente:</b> Instituto Nacional de Estadística. <br>
+  Tasas de paro por nivel de formación alcanzado, sexo y grupo de edad <br>
+  Fichero: 6393.xlsx <br><br>
+  La clasificación de los estudios que aparece en el fichero es la siguiente: <br>
+  Analfabetos <br>
+  Estudios Primarios Incompletos <br>
+  Educación Primaria <br>
+  Primera etapa de Educación Secundaria y similar <br>
+  Segunda etapa de Educación Secundaria con orientación general <br>
+  Segunda etapa de Educación Secundaria con orientación profesional <br>
+  Educación Superior
+</p>
+<p>Los distintos rangos de edad que aparecen en el fichero son los siguientes: <br>
+   De 16 a 19 años<br>
+   De 20 a 24 años<br>
+   De 25 a 29 años<br>
+   De 30 a 44 años<br>
+   De 45 a 54 años<br>
+   De 55 a más años<br>
+</p>
+<p>
+  El periodo temporal al que están referidos los datos va desde el primer trimestre del año 2014 al cuarto trimestre del año 2018.
+</p>
+
+<p>
+  Herramientas utilizadas: <br>
+    He utilizado como herramientas Google Sheet y Tableau Desktop porque son con las que he adquirido mayor familiaridad durante el desarrollo de la asignatura. <br>
+    Google Sheet me parece una herramienta fácil de usar que sirve para casos como éste en el que el volumen de datos no es muy grande y con ella he utilizado un gráfico de líneas, porque me ha parecido una buena manera de ver gráficamente las diferencias entre las tasas de paro correspondientes a cada uno de los niveles de estudios alcanzados a lo largo del tiempo.<br>
+    Tableau Desktop me parece una herramienta más potente y que admite muchas posibilidades de representación gráfica de los datos y para volúmenes mayores de los mismos, y en este caso después de probar varios gráficos, he escogido el treemap para visualizar las comparaciones entre las diferentes tasas de paro asociadas a los diferentes niveles de estudios en cada uno de los rangos de edades diferenciados en los datos.
+</p>
+
+<h2>1. Visualización con Google Sheet</h2>
+<h3>Gráficos de líneas</h3>
+
+<p>
+  En el rango de 16 a 19 años, no se representa la parte correspondiente a Analfabetos, Estudios Primarios Incompletos y Educación Superior ya que son poco representativos en este grupo de edad.<br>
+  En el rango de 20 a 24 años se representan los mismos estudios que en el rango anterior, añadiendo Educación Superior, ya que en este rango de edad ya es representativo. 
+</p>
+<p>
+  En ambos rangos de edad, es decir en el de 16 a 19 años y en el de 20 a 24 años se observa claramente como la tasa de paro disminuye con el mayor nivel de estudios. <br>
+  También se observa un descenso de la tasa de paro en todos los niveles de estudios en el periodo temporal representado, que va desde el primer trimestre del 2014 al último trimestre del 2018, coincidiendo con la salida de la crisis económica, que tanta pérdida de empleo causó. 
+</p>
+<p>
+  Se va observando una cierta similitud entre las tasas de paro correspondientes a la Segunda etapa de Educación Secundaria con orientación general y con orientación profesional.
+</p>
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vStXpOLlkZVitM3-aSQRD8Sq2FySKoqm_Y-25CiQcqtDrn4Eaong5nDsH4fNsEw8xWXNQf0DuQh8XhJ/pubchart?oid=415397173&amp;format=interactive"></iframe>
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vStXpOLlkZVitM3-aSQRD8Sq2FySKoqm_Y-25CiQcqtDrn4Eaong5nDsH4fNsEw8xWXNQf0DuQh8XhJ/pubchart?oid=1014312738&amp;format=interactive"></iframe>
+
+<p>
+  En el rango de 25 a 29 años se representan los mismos estudios que en el rango anterior, ya que siguen siendo poco representativos los niveles de estudios Analfabetos y Estudios Primarios Incompletos.  <br>
+  En el rango de 30 a 44 años se representan los mismos estudios que en el rango anterior, añadiendo Educación Primaria Incompleta, que va adquiriendo más representatividad en este rango de edad. 
+</p>
+<p>
+  En el rango de edad de 25 a 29 años se observa una diferencia nítida y muy clara de la diferencia de la tasa de paro , entre niveles de estudios alcanzados, apreciándose claramente la disminución de dicha tasa según aumenta el nivel de estudios <br>
+  Se visualiza como por ejemplo la tasa de paro correspondiente al nivel de estudios Primera etapa de educación secundaria y similar es bastante más baja que la tasa de nivel de estudios de Educación Primaria <br>
+  También se aprecia una diferencia similar en la tasa de paro del nivel de estudios Segunda etapa de Educación Secundaria (ya sea con orientación general o profesional) con respecto al nivel de estudios Primera etapa de Educación Secundaria. <br>
+  Por último una diferencia similar de tasa de paro se observa entre el nivel de estudios alcanzados Educación Superior y la Segunda etapa de Educación Secundaria (independientemente de la orientación).
+</p>
+<p>
+  Se sigue observando una cierta similitud entre las tasas de paro correspondientes a la Segunda etapa de Educación Secundaria con orientación general y con orientación profesional en este rango de edad.
+</p>
+
+<p>
+  En el rango de edad de 30 a 44 años las diferencias se ven todavía más nítidas, que en el rango anterior de edad. <br><br>
+  En este caso se observa similitudes entre el nivel de estudios alcanzado Estudios Primarios Incompletos y Educación Primaria, sobretodo desde el primer trimestre del 2016 al último trimestre del 2018. <br>
+  En este rango de edad la similitud de tasas de paro entre la Segunda etapa de Educación Secundaria con orientación general y la Segunda etapa de Educación Secundaria con orientación profesional, se vuelve casi mimética.
+  </p>
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vStXpOLlkZVitM3-aSQRD8Sq2FySKoqm_Y-25CiQcqtDrn4Eaong5nDsH4fNsEw8xWXNQf0DuQh8XhJ/pubchart?oid=1901488784&amp;format=interactive"></iframe>
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vStXpOLlkZVitM3-aSQRD8Sq2FySKoqm_Y-25CiQcqtDrn4Eaong5nDsH4fNsEw8xWXNQf0DuQh8XhJ/pubchart?oid=1228082729&amp;format=interactive"></iframe>
+
+<p>
+  En el rango de 45 a 54 años se representan los mismos estudios que en el rango anterior, añadiendo Analfabetos, que va adquiriendo más representatividad en este rango de edad, quedando representados gráficamente las tasas de paro de todos los niveles de estudios alcanzados.<br>
+  Lo mismo ocurre con el rango de 55 a más años, donde también se representan las tasas de paro de todos los niveles de estudios alcanzados.
+  </p>
+<p>
+  En ambos rangos de edad, se siguen diferenciando claramente las tasas de paro de los diferentes niveles de estudio alcanzados, y siempre coincide que la menor tasa de paro se da con el mayor nivel de estudios.
+</p>
+<p>
+  Se sigue observando,al igual que en los rangos de edades anteriores, la similitud entre las tasa de paro correspondiente a la Segunda etapa de Educación Secundaria con orientación general y con orientación profesional en ámbos rangos de edad.
+</p>
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vStXpOLlkZVitM3-aSQRD8Sq2FySKoqm_Y-25CiQcqtDrn4Eaong5nDsH4fNsEw8xWXNQf0DuQh8XhJ/pubchart?oid=1964121637&amp;format=interactive"></iframe>
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vStXpOLlkZVitM3-aSQRD8Sq2FySKoqm_Y-25CiQcqtDrn4Eaong5nDsH4fNsEw8xWXNQf0DuQh8XhJ/pubchart?oid=289613728&amp;format=interactive"></iframe>
+
+
+<h2>2. Visualización con Tableau Desktop</h2>
+<h3>Gráficos Treemap</h3>
+
+<p>
+  Como se ha comentado en el gráfico de líneas, en el rango de 16 a 19 años, no se representa la parte correspondiente a Analfabetos, Estudios Primarios Incompletos y Educación Superior ya que son poco representativos en este grupo de edad.<br>
+</p>
+<p>
+  En el rango de edad de 16 a 19 años la tasa de paro es elevada, pero de todas maneras se observa una menor tasa de paro en la segunda etapa de Educación Secundaria con orientación general.
+  Se observa como la tasa de paro disminuye con el mayor nivel de estudios. <br>
+</p>
+
+<a href="https://ibb.co/2ZJ04Bh"><img src="https://i.ibb.co/z6dWvwx/01-Edad-De16a19.png" alt="01-Edad-De16a19" border="0"></a><br />
+
+<p>
+    En el rango de 20 a 24 años se representan los mismos estudios que en el rango anterior, añadiendo Educación Superior, ya que en este rango de edad ya es representativo. 
+</p>
+<p>
+  En este rango de edad, se observa claramente como la tasa de paro disminuye con el mayor nivel de estudios alcanzado. <br>
+  Por ejemplo se visualiza aunque con poca diferencia que la tasa de paro de la Primera etapa de Educación Secundaria y similar, es sensiblemente inferior que la correspondiente a la Educación Primaria.<br>
+  A su vez se observa visualmente, bastante similitud entre las tasas de paro de la segunda etapa de Educación Secundaria con orientación general y la segunda etapa de Educación Secundaria con orientación profesional, siendo ambas tasas de paro sensiblemente inferiores a la tasa de paro de la primera etapa de Educación Secundaria.<br>
+  Por último y claramente diferenciada visualmente se observa como menor tasa de paro la correspondiente al nivel de estudios Educación Superior.  
+</p>
+
+<a href="https://ibb.co/PF843tk"><img src="https://i.ibb.co/hLvHhC0/02-Edad-De20a24.png" alt="02-Edad-De20a24" border="0"></a><br />
+
+<p>
+    En el rango de 25 a 29 años se representan los mismos estudios que en el rango anterior y se observa un gráfico parecido al del rango de edad anterior, pero donde ya se van acentuando más las diferencias de las tasas de paro, según el nivel de estudios alcanzado. <br>
+    Se aprecia una diferencia mayor entre la primera etapa de Educación Secundaria y similar y la correspondiente a la Educación Primaria que en el rango anterior de edad. <br>
+    Las tasas de paro de los niveles de estudios de la segunda etapa de Educación Secundaria con orientación general y profesional aparecen muy similares y siguen siendo inferiores a la de la primera etapa de la Educación Secundaria.<br>
+    Sigue apareciendo como destacada, por ser la más pequeña, la tasa de paro de la Educación Superior.
+</p>
+
+<a href="https://ibb.co/72NHRKT"><img src="https://i.ibb.co/vZvbQkr/03-Edad-De25a29.png" alt="03-Edad-De25a29" border="0"></a><br />
+
+<p>
+    En el rango de 30 a 44 años se representan los mismos estudios que en el rango anterior, añadiendo Estudios Primarios incompletos.  <br>
+    Se observa una sensiblemente menor tasa de paro de la Educación Primaria con respecto a los Estudios Primarios incompletos y en general de izquierda a derecha se sigue observando visualmente como disminuye la tasa de paro con el nivel de estudios alcanzado, siendo la menor la de Educación Superior.
+  </p>
+
+<a href="https://ibb.co/h16Krtn"><img src="https://i.ibb.co/Vp1vbPh/04-Edad-De30a44.png" alt="04-Edad-De30a44" border="0"></a><br />
+
+<p>
+    En el rango de 45 a 54 años se representan los mismos estudios que en el rango anterior, añadiendo Analfabetos.  <br>
+    Se observa casi la mitad de la tasa de paro en este rango de edad, la ocupan visualmente la categoría Analfabetos y Estudios Primarios incompletos, aunque esta última se diferencia por ser inferior a la anterior.<br>
+    Por otro lado en la otra mitad de la tasa de paro se observa de manera sencilla como sigue disminuyendo con el nivel de estudios alcanzado, apreciándose una menor tasa de paro en la Primera etapa de Educación Secundaria y similar, que en Educación Primaria, alcanzando visualmente ambas juntas la cuarta parte de la tasa de paro total.<br>
+    Se siguen observando en este rango de edad las similitudes de tasa de paro entre ambas Segundas Etapas de Educación Secundaria (general y profesional) y a su vez, se sigue viendo como la menor a la correspondiente a la Educación Superior. 
+  </p>
+
+<a href="https://ibb.co/T4565Zr"><img src="https://i.ibb.co/Pc8K8Rt/05-Edad-De45a54.png" alt="05-Edad-De45a54" border="0"></a><br />
+
+<p>
+    En el rango de 55 a más años se representan los mismos estudios que en el rango anterior.  <br>
+    <br>
+    El gráfico es bastante similar al del rango de edad anterior. Quizás se visualiza una mayor similitud entre las tasas de paro de la Educación Primaria y la primera etapa de la Educación Secundaria, aunque esta segunda se aprecia sensiblemente inferior.
+    Se observan más parejas todavía si cabe, las tasas de la segunda etapa de Educación Secundaria y la Educación Superior permanece como el nivel de estudios alcanzado con la menor tasa de paro.
+  </p>
+
+<a href="https://ibb.co/JBhjxkk"><img src="https://i.ibb.co/LkGdQpp/06-Edad-De55a-Mas.png" alt="06-Edad-De55a-Mas" border="0"></a><br />
+
+<h2>3. Conclusiones</h2>
+<p>
+  Las conclusiones a las que llegamos, es que en lo que a tasa de paro se refiere, merece la pena estudiar en España en estos últimos años, ya que a mayor nivel alcanzado de estudios se observa una menor tasa de paro en todos los rangos de edades, y además se observa una tendencia decreciente continuada de la misma desde principios del 2014 a finales del 2018.
+</p>
+
+</body>
+</html>
